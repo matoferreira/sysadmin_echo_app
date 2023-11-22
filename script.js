@@ -12,8 +12,9 @@ function sendToServer() {
     .then(data => {
       const echoedInput = data.echo;
       const serverIp = data.serverIp;
+      const ipv4Address = data.ipv4Address;
 
-      console.log(`Received from ${serverIp}: ${echoedInput}`);
+      console.log(`Received from ${serverIp} (IPv4: ${ipv4Address}): ${echoedInput}`);
     })
     .catch(error => {
       console.error('Error:', error);
