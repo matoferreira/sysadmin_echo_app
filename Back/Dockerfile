@@ -9,7 +9,7 @@ RUN npm install
 COPY src ./src/
 
 # Expose the port that your app is running on
-EXPOSE 3000
+EXPOSE 8443
 
 # Define the command to run your application
 CMD ["node", "src/server.js"]

@@ -1,7 +1,7 @@
 function sendToServer() {
   const userInput = document.getElementById('userInput').value;
 
-  fetch('http://localhost:3000/echo', {
+  fetch('http://localhost:8443/echo', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
