@@ -3,7 +3,7 @@ services:
   sysadmin-web-app-back:
     image: matoferreira/sysadmin-web-app-back
     ports:
-      - "3000:3000"
+      - "8443:8443"
     networks:
       - sysadmin-network
 
